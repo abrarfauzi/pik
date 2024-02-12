@@ -204,20 +204,7 @@
                 <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
                   Edit My Profile
                 </h2>
-          <!--
-            This example requires some changes to your config:
-            
-            ```
-            // tailwind.config.js
-            module.exports = {
-              // ...
-              plugins: [
-                // ...
-                require('@tailwindcss/forms'),
-              ],
-            }
-            ```
-          -->
+      
           <form>
             <div class="space-y-12">
               <div class="border-b border-gray-900/10 pb-12">
@@ -389,8 +376,9 @@
           </form>
           
           </section>
+          <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
           <!--/////////////////search type////////-->
-          <section id="search" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+          <section id="search" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6" style="min-height: 600px;">
             <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
               
             </h2>
@@ -410,40 +398,18 @@
                   </span>
                 </button>
             
-                <!--
-                  Select popover, show/hide based on select state.
-            
-                  Entering: ""
-                    From: ""
-                    To: ""
-                  Leaving: "transition ease-in duration-100"
-                    From: "opacity-100"
-                    To: "opacity-0"
-                -->
+                
                 <ul class="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-                  <!--
-                    Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-            
-                    Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
-                  -->
+                  
                   <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
                   
                     <div class="flex items-center">
-                      <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                      
                       <span class="font-normal ml-3 block truncate"  href="#city" class="hover:opacity-90">🏚️Apartment</span>
                     </div>
                   
       
-                    <!--
-                      Checkmark, only display for selected option.
-            
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
-                    -->
-                   <!-- <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
-                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                      </svg>
-                    </span>-->
+                   
       
                    
                     <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
@@ -457,25 +423,14 @@
                           </button>
                         </div>
                       
-                        <!--
-                          Dropdown menu, show/hide based on menu state.
-                      
-                          Entering: "transition ease-out duration-100"
-                            From: "transform opacity-0 scale-95"
-                            To: "transform opacity-100 scale-100"
-                          Leaving: "transition ease-in duration-75"
-                            From: "transform opacity-100 scale-100"
-                            To: "transform opacity-0 scale-95"
-                        -->
+                        
                         <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                           <div class="py-1" role="none">
-                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                           
                             <a href="#Choose City" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Rent</a>
                             <a href="#Choose City" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Sale</a>
                             
-                            <!--<form method="POST" action="#" role="none">
-                              <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
-                            </form>-->
+                            
                           </div>
                         </div>
                       </div>
@@ -485,38 +440,38 @@
             
                   <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex items-center">
-                      <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                      
                       <span class="font-normal ml-3 block truncate">🏚️studio</span>
                     </div></li>
-                  <!-- More items... -->
+                  
                   <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex items-center">
-                      <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                     
                       <span class="font-normal ml-3 block truncate">🏚️villa</span>
                     </div>
         </li>
-      <!-- ////////////////////////////////////////////////////////////////-->
+  
       <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
         <div class="flex items-center">
-          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          
           <span class="font-normal ml-3 block truncate">🏚️offices</span>
         </div>
       </li>
         <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
           <div class="flex items-center">
-            <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+           
             <span class="font-normal ml-3 block truncate">🏚️Storage</span>
           </div>
         </li>
           <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
             <div class="flex items-center">
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+              
               <span class="font-normal ml-3 block truncate">🏚️Halls</span>
             </div>
           </li>
             <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
               <div class="flex items-center">
-                <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                
                 <span class="font-normal ml-3 block truncate">🏚️Stores</span>
               </div>
             </li>
@@ -525,12 +480,13 @@
             </div>
             
           </section>
+
+          
       <!--///////////////////choose city///////////////////-->
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
-      
-          <!--/////////////////search type////////-->
-          <section id="Choose City" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+          <section id="Choose City"class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6" style="min-height: 600px;">
             <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+              
             </h2>
             <div>
               <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-900">Pick the City</label>
@@ -546,36 +502,17 @@
                     </svg>
                   </span>
                 </button>
-            
-                <!--
-                  Select popover, show/hide based on select state.
-            
-                  Entering: ""
-                    From: ""
-                    To: ""
-                  Leaving: "transition ease-in duration-100"
-                    From: "opacity-100"
-                    To: "opacity-0"
-                -->
+          
                 <ul class="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-                  <!--
-                    Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-            
-                    Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
-                  -->
+                 
                   <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex items-center">
                       
-                      <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-                      <!--<a herf="#realEstate" ><span class="font-normal ml-3 block truncate">Akko</span></a>-->
+                     
                       <a href="#realEstate" class="hover:opacity-90"><span class="font-normal ml-3 block truncate">Akko</span></a>
                     </div>
             
-                    <!--
-                      Checkmark, only display for selected option.
-            
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
-                    -->
+                    
                     <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
                       <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
